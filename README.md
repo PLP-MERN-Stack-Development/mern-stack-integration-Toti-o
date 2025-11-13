@@ -1,34 +1,55 @@
+# MERN Blog
 
+A full-stack blog application built with MongoDB, Express.js, React, and Node.js.
 
-## Files Included
+## Quick Start
 
-- `Week4-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Configuration files
-  - Sample models and components
+### Backend Setup
+```bash
+cd server
+npm install
+npm run dev
+```
+Server runs on `http://localhost:5000`
 
-## Requirements
+### Frontend Setup
+```bash
+cd client  
+npm install
+npm run dev
+```
+Client runs on `http://localhost:5173`
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git
+## Environment Variables
 
-## Submission
+### Server (.env)
+```env
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/mern-blog
+```
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+## Project Structure
+```
+mern-blog/
+├── client/                 # React frontend
+│   ├── src/
+│   │   ├── components/     # UI components
+│   │   ├── pages/          # Page components
+│   │   └── hooks/          # Custom hooks
+└── server/                 # Express backend
+    ├── controllers/        # Business logic
+    ├── models/             # MongoDB models
+    ├── routes/             # API routes
+    └── middleware/         # Custom middleware
+```
 
-1. Complete both the client and server portions of the application
-2. Implement all required API endpoints
-3. Create the necessary React components and hooks
-4. Document your API and setup process in the README.md
-5. Include screenshots of your working application
+## Features
+- React frontend with Vite
+- Express.js REST API
+- MongoDB database
+- Component-based architecture
+- Modern development setup
 
-## Resources
-
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [Mongoose Documentation](https://mongoosejs.com/docs/) 
+## Available Scripts
+- `npm run dev` - Start development server
+- `npm start` - Start production server
